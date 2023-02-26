@@ -1,0 +1,14 @@
+var arr = [Int]() // non-empty array
+var res = [Int]()
+var check = 0
+
+    for i in arr{
+        check += 1
+        if check < arr.count && res.count < arr.count{
+            res.append(i)
+            if i == 0 && res.count <= arr.count-1{
+                res.append(0)
+            }
+        }
+    }
+    arr = res
